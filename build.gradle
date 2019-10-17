@@ -22,6 +22,9 @@ buildscript {
                 password 'admin123'
             }
         }
+        maven {
+            url "https://jitpack.io"
+        }
         
     }
     dependencies {
@@ -53,6 +56,9 @@ allprojects {
                 username 'admin'
                 password 'admin123'
             }
+        }
+        maven {
+            url "https://jitpack.io"
         }
         
     }
