@@ -11,6 +11,6 @@ public class BaseActivity extends FragmentActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatusBarUtil.statusBarLightMode(this);
+        StatusBarUtil.statusBarLightMode(this );
     }
 }
