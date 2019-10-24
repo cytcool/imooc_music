@@ -28,8 +28,9 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
-    
+
     implementation project(path: ':lib_common_ui')
     implementation project(path: ':lib_network')
     implementation project(path: ':lib_image_loader')
+    implementation project(path: ':lib_audio')
 }
