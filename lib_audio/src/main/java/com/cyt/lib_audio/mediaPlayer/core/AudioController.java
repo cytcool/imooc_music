@@ -111,7 +111,7 @@ public class AudioController {
         return mQueueIndex;
     }
 
-    private AudioBean getNowPlaying() {
+    public AudioBean getNowPlaying() {
         return getPlaying();
     }
 
