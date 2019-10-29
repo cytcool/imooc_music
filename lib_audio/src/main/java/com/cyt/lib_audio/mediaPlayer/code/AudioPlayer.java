@@ -9,6 +9,7 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.util.Log;
 
+import com.cyt.lib_audio.mediaPlayer.AudioHelper;
 import com.cyt.lib_audio.mediaPlayer.events.AudioCompleteEvent;
 import com.cyt.lib_audio.mediaPlayer.events.AudioErrorEvent;
 import com.cyt.lib_audio.mediaPlayer.events.AudioLoadEvent;
@@ -51,7 +52,7 @@ public class AudioPlayer implements MediaPlayer.OnCompletionListener,
 
     private void init() {
         mMediaPlayer = new CustomMediaPlayer();
-        mMediaPlayer.setWakeMode(null, PowerManager.PARTIAL_WAKE_LOCK);
+        mMediaPlayer.setWakeMode(AudioHelper.getContext(), PowerManager.PARTIAL_WAKE_LOCK);
         mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mMediaPlayer.setOnCompletionListener(this);
         mMediaPlayer.setOnPreparedListener(this);

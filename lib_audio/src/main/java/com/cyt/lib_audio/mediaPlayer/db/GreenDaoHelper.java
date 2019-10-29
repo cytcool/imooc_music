@@ -5,9 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import com.cyt.lib_audio.mediaPlayer.AudioHelper;
 import com.cyt.lib_audio.mediaPlayer.model.AudioBean;
 import com.cyt.lib_audio.mediaPlayer.model.Favourite;
-import com.imooc.lib_audio.mediaplayer.db.DaoMaster;
-import com.imooc.lib_audio.mediaplayer.db.DaoSession;
-import com.imooc.lib_audio.mediaplayer.db.FavouriteDao;
+import com.cyt.lib_audio.mediaplayer.db.DaoMaster;
+import com.cyt.lib_audio.mediaplayer.db.DaoSession;
+import com.cyt.lib_audio.mediaplayer.db.FavouriteDao;
 
 
 /**

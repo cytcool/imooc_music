@@ -1,14 +1,10 @@
 package com.cyt.lib_audio.mediaPlayer;
 
-import android.app.Activity;
 import android.content.Context;
 
 import com.cyt.lib_audio.mediaPlayer.core.AudioController;
 import com.cyt.lib_audio.mediaPlayer.db.GreenDaoHelper;
-import com.cyt.lib_audio.mediaPlayer.model.AudioBean;
-import com.cyt.lib_audio.mediaPlayer.view.MusicPlayerActivity;
 
-import java.util.ArrayList;
 
 /**
  * Created by qndroid on 19/5/20.
@@ -26,15 +22,15 @@ public final class AudioHelper {
     GreenDaoHelper.initDatabase();
   }
 
-  //外部启动MusicService方法
-  public static void startMusicService(ArrayList<AudioBean> audios) {
-    MusicService.startMusicService(audios);
-  }
-
-  public static void addAudio(Activity activity, AudioBean bean) {
-    AudioController.getInstance().addAudio(bean);
-    MusicPlayerActivity.start(activity);
-  }
+//  //外部启动MusicService方法
+//  public static void startMusicService(ArrayList<AudioBean> audios) {
+//    MusicService.startMusicService(audios);
+//  }
+//
+//  public static void addAudio(Activity activity, AudioBean bean) {
+//    AudioController.getInstance().addAudio(bean);
+//    MusicPlayerActivity.start(activity);
+//  }
 
   public static void pauseAudio() {
     AudioController.getInstance().pause();
