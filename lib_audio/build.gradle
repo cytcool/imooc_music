@@ -33,7 +33,7 @@ dependencies {
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:recyclerview-v7:27.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
@@ -43,11 +43,10 @@ dependencies {
     implementation project(path: ':lib_share')
     implementation project(path: ':lib_common_ui')
 }
-
 greendao {
     //其它配置保持默认,有需要再研究
     schemaVersion 1 //数据库版本号
-    daoPackage 'com.imooc.lib_audio.mediaplayer.db' //dao,master类所在包
+    daoPackage 'com.cyt.lib_audio.mediaplayer.db' //dao,master类所在包
 }
 
 uploadArchives{
